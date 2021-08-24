@@ -2,7 +2,7 @@
     package="com.example.auntie_rafiki_appointments">
    <application
         android:label="auntie_rafiki_appointments"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/launcher_icon">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
