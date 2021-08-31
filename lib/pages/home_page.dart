@@ -7,37 +7,43 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("PT projects"),
+        title: Text("PT PROJECT"),
       ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Text('University of Dar es salaam'),
-          Image.asset("assets/images/udsm.jpg")
-        ],
+      body: Center(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Text("UNIVERSITYOF DAR ES SALAAM"),
+            Image.asset("assets/images/udsm.jpg"),
+          ],
+        ),
       ),
       drawer: Container(
-        width: MediaQuery.of(context).size.width * 0.7,
-        color: Colors.lightBlue,
+        color: Colors.blue,
+        width: MediaQuery.of(context).size.width * 0.8,
         child: ListView(
           children: [
-           /* AppBar(
-              title: Text('options'),
+            UserAccountsDrawerHeader(accountName: Text("Peter Abel"), accountEmail: Text("peterabel2504@gmail.com"), currentAccountPicture: CircleAvatar(backgroundImage: AssetImage("assets/images/peter.jpg")),),
+            /*AppBar(
+              title: Text("INDUSTRIAL PROJECT"),
             ),*/
-            UserAccountsDrawerHeader(
-              currentAccountPicture: CircleAvatar(backgroundImage: AssetImage("assets/images/peter.jpg"),),
-              accountName: Text('Peter Abel'), accountEmail: Text('peterabel2504@gmail.com')),
             ListTile(
-              /*leading:
-               CircleAvatar(
-                backgroundColor: Colors.white,
+              /* leading: CircleAvatar(
+              backgroundColor: Colors.white,
               ),*/
-              title: Text("BoomColorChanger"),
-              leading: Icon(Icons.color_lens),
+              
+              leading: Icon(Icons.ac_unit_sharp),
+              title: Text("boom color changer"),
               onTap: () {
                 Navigator.of(context).pushNamed("boom_color_changer");
               },
-            )
+            ),
+            ListTile(
+                /* leading: CircleAvatar(
+              backgroundColor: Colors.white,
+              ),*/
+                leading: Icon(Icons.ac_unit_sharp),
+                title: Text("boom color changer")),
           ],
         ),
       ),

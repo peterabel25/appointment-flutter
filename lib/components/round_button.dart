@@ -1,9 +1,9 @@
+
 import 'package:flutter/material.dart';
 
 class RoundButton extends StatelessWidget {
   final VoidCallback onTap;
   final Color color;
-
   const RoundButton({Key? key, required this.onTap, required this.color}) : super(key: key);
 
   @override
@@ -16,14 +16,16 @@ class RoundButton extends StatelessWidget {
             width: 100,
             color: Colors.white,
             child: Padding(
-              padding: const EdgeInsets.all(6),
+              padding: const EdgeInsets.all(6.0),
               child: ClipOval(
                   child: Container(
                 height: 100,
                 width: 100,
                 color: color,
-              )),
-            )),
+              )
+              ),
+            )
+            ),
       ),
     );
   }
