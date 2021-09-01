@@ -44,6 +44,18 @@ class HomePage extends StatelessWidget {
               ),*/
                 leading: Icon(Icons.ac_unit_sharp),
                 title: Text("boom color changer")),
+
+                   ListTile(
+              /* leading: CircleAvatar(
+              backgroundColor: Colors.white,
+              ),*/
+              
+              leading: Icon(Icons.ac_unit_sharp),
+              title: Text("events"),
+              onTap: () {
+                Navigator.of(context).pushNamed("events");
+              },
+            )
           ],
         ),
       ),

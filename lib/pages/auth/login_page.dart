@@ -33,7 +33,7 @@ class _State extends State<LogInPage> {
             key: form,
             child: Column(
               children: [
-                Image.asset("assets/icons/icon.jpg"),
+                Image.asset("assets/images/udsm.jpg"),
                 TextFormField(
                   controller: emailController,
                   validator: (value) {
